@@ -237,6 +237,7 @@ p {
   min-width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 
   background-color: var(--blue-bg-cl);
   font-weight: 700;
@@ -599,11 +600,13 @@ p {
 .btn-portfolio {
   padding: 6px 22px;
 
-  background-color: var(--additional-bg-cl);
+  background-color: #F5F4FA;
   font-style: normal;
   font-weight: 500;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
+  border-radius: 4px;
+  border: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -937,17 +940,18 @@ p {
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--additional-bg-cl);
   top: 8px;
   right: 8px;
   padding: 0;
   cursor: pointer;
-  /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-btn:focus,
+.modal-btn:focus,
 .modal-btn:hover {
   fill: var(--blue-bg-cl);
-} */
+}
 
 .register-form {
   text-align: center;
@@ -972,17 +976,22 @@ p {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
+}
+
+.register-form-label:first-child {
+  margin-top: 0;
 }
 
 .register-form-span {
   display: flex;
-  margin-top: 10px;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--grey-txt-cl);
 }
+
 
 .register-form-input {
   height: 40px;
